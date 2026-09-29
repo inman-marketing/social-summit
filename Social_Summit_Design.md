@@ -9,6 +9,8 @@ Social Summit, founded by Andrew Jevin and powered by Inman. Social Summit is th
 - **Azure** (Script accent) — `#3e8ffa`
 - **Inman Blue** (Endorsement) — `#0b84ff`
 - **Navy** (Foundation) — `#161a48`
+- **Magenta** — `#e948e6`
+- **Champagne** (Warm sections) — `#f4efe7`
 - **Deep Navy** (Backgrounds) — `#0e1234`
 - **Signature gradient** — `linear-gradient(96deg, #ED26F2 0%, #E85BE4 42%, #EFA9E6 74%, #F7D9F3 100%)`
 
