@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Summit — Brand Guidelines</title>
+<link rel="icon" href="assets/logos/social-summit-instagram-pfp.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<style>
+@font-face{font-family:'Horizon';src:url('assets/fonts/Horizon.otf') format('opentype');font-weight:400 900;font-display:swap}
+@font-face{font-family:'Mistrully';src:url('assets/fonts/Mistrully.otf') format('opentype');font-weight:400;font-display:swap}
+:root{--bg:#F6F7FB;--panel:#fff;--side:#fff;--ink:#10132E;--mute:#6B7098;--line:#D9DCEC;--soft:#ECEEF6;--acc:#ED26F2;--link:#0B84FF}
+[data-theme="dark"]{--bg:#0E1234;--panel:#161A48;--side:#10143A;--ink:#EAEBF6;--mute:#A4A8C8;--line:#2A2F63;--soft:#1E2350;--link:#6FB2FF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 'Hanken Grotesk',system-ui,sans-serif;display:grid;grid-template-columns:260px minmax(0,1fr);min-height:100vh}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+aside{position:sticky;top:0;height:100vh;overflow:auto;background:var(--side);border-right:1px solid var(--line);padding:24px 20px;display:flex;flex-direction:column;gap:24px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand a{font-weight:800;color:var(--ink);font-size:15px}
+.tg{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:4px 10px;font:600 12px 'Hanken Grotesk';cursor:pointer}
+nav{display:flex;flex-direction:column;gap:4px}
+nav h6{margin:0 0 6px;font:700 11px 'Hanken Grotesk';letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+nav a{color:var(--ink);font-size:14px;padding:6px 10px;border-radius:8px}
+nav a:hover{background:var(--soft);text-decoration:none}
+nav a.on{background:var(--soft);font-weight:700}
+main{padding:48px clamp(20px,5vw,72px) 96px;max-width:1120px;width:100%}
+.eyebrow{font:700 12px 'Hanken Grotesk';letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+h1{font:900 clamp(36px,5vw,56px)/1 'Horizon','Hanken Grotesk',sans-serif;text-transform:uppercase;letter-spacing:-.02em;margin:10px 0 16px}
+.lede{max-width:680px;color:var(--mute);font-size:18px;text-wrap:pretty;margin:0}
+section{padding-top:56px;margin-top:56px;border-top:1px solid var(--line)}
+h2{font:800 28px/1.1 'Hanken Grotesk';margin:0 0 20px;letter-spacing:-.01em}
+h3{font:700 13px 'Hanken Grotesk';letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:32px 0 12px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:var(--ink);color:var(--bg);font:700 14px 'Hanken Grotesk';padding:12px 20px;border-radius:999px}
+.btn:hover{text-decoration:none;opacity:.88}
+.lgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.lg{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.lgi{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;padding:24px}
+.lgi.navy{background:#161A48}.lgi.light{background:#fff}
+.lgi img{max-width:100%;max-height:100%;object-fit:contain}
+.lg figcaption{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;font-size:13px;border-top:1px solid var(--line)}
+.lg figcaption span{color:var(--mute)}.lg figcaption a{font-weight:700}
+.fav{display:flex;flex-wrap:wrap;align-items:flex-end;gap:32px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
+.fav figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:12px;color:var(--mute)}
+.fav img{display:block;border-radius:6px}
+.tab{display:flex;align-items:center;gap:8px;background:var(--soft);border-radius:10px 10px 0 0;padding:10px 14px;font-size:13px;min-width:240px}
+.tab img{width:16px;height:16px;border-radius:3px}
+.sws{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.sw{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.chip{height:110px}.chip.dk{box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.swb{padding:14px 16px}.swn{font-weight:800;font-size:15px}
+.swb p{margin:6px 0 0;font:500 13px/1.7 'Hanken Grotesk';color:var(--mute);font-variant-numeric:tabular-nums}
+.grad{height:88px;border-radius:14px;background:linear-gradient(96deg,#ED26F2 0%,#E85BE4 42%,#EFA9E6 74%,#F7D9F3 100%)}
+.gradcap{font-size:13px;color:var(--mute);margin-top:10px}
+.spec{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:32px}
+.spec .lbl{font:700 12px 'Hanken Grotesk';letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-bottom:16px}
+.d-horizon{font:900 clamp(40px,6vw,72px)/.92 'Horizon',sans-serif;text-transform:uppercase;letter-spacing:-.02em}
+.d-script{font:400 clamp(48px,7vw,88px)/1 'Mistrully',cursive;color:#3E8FFA}
+.d-serif{font:500 clamp(28px,4vw,40px)/1.2 'Newsreader',Georgia,serif}
+.body-s{font-size:18px;max-width:640px;text-wrap:pretty;margin:0}
+.wts{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px;margin-top:16px}
+.wt{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+.wt b{display:block;font-size:40px;line-height:1.1}.wt span{font-size:12px;color:var(--mute)}
+.use{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}
+.use li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px}
+.use li i{font-style:normal;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.ok i{background:#1F9D6B;color:#fff}.no i{background:#E23D5B;color:#fff}
+.dev{background:#161A48;color:#EAEBF6;border-radius:18px;padding:32px;display:grid;gap:24px}
+.dev h4{margin:0;font:900 28px 'Horizon',sans-serif;text-transform:uppercase}
+.dev .sub{font:700 12px 'Hanken Grotesk';letter-spacing:.1em;text-transform:uppercase;color:#A4A8C8}
+.dcs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.dc{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.05);border-radius:12px;padding:12px}
+.dchip{width:44px;height:44px;border-radius:10px;flex:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.dc div:last-child{display:flex;flex-direction:column;font-size:13px}.dc span{color:#A4A8C8}.dc code{font-size:12px;color:#fff}
+.dfs{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.df{background:rgba(255,255,255,.05);border-radius:12px;padding:14px;font-size:13px}
+.df b{display:block;font-size:34px;line-height:1.1;font-weight:400}.df span{display:block;color:#A4A8C8}
+.dev .btn{background:#ED26F2;color:#fff;justify-self:start;margin-top:0}
+@media (max-width:820px){body{grid-template-columns:1fr}aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}nav{flex-direction:row;flex-wrap:wrap}nav h6{width:100%}}
+</style>
+</head>
+<body>
+<aside>
+<div class="brand"><a href="#top">Social Summit Brand Guidelines</a><button class="tg" id="tg" type="button">Dark</button></div>
+<nav>
+<h6>Foundation</h6>
+<a href="#logos">Logos</a>
+<a href="#favicon">Favicon</a>
+<a href="#colors">Colors</a>
+<a href="#typography">Typography</a>
+<a href="#script">Script typeface</a>
+<a href="#editorial">Editorial typeface</a>
+<a href="#developer">Developer guide</a>
+</nav>
+<nav>
+<h6>Inman brand standards</h6>
+<a href="https://inman-product.github.io/brand-standards/brand-system/">Inman brand system</a>
+<a href="https://inman-product.github.io/brand-standards/events">Events</a>
+</nav>
+</aside>
+<main id="top">
+<div class="eyebrow">Events · Powered by Inman</div>
+<h1>Social Summit</h1>
+<p class="lede">Social Summit is Andrew Jevin's community-driven real estate event, now powered by Inman. Social Summit stays the dominant identity in every asset; "Powered by Inman" sits beside it as a smaller endorsement.</p>
+
+<section id="logos">
+<h2>Logos</h2>
+<div class="lgs"><figure class="lg"><div class="lgi light"><img src="assets/logos/social-summit-gradient-inman.png" alt="Primary · gradient + powered by Inman, for light"></div><figcaption><span>Primary · gradient + powered by Inman, for light</span><a href="assets/logos/social-summit-gradient-inman.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi navy"><img src="assets/logos/social-summit-gradient.png" alt="Gradient + powered by Inman, reversed for dark"></div><figcaption><span>Gradient + powered by Inman, reversed for dark</span><a href="assets/logos/social-summit-gradient.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi navy"><img src="assets/logos/social-summit-gradient-clean.png" alt="Gradient wordmark, no endorsement"></div><figcaption><span>Gradient wordmark, no endorsement</span><a href="assets/logos/social-summit-gradient-clean.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi navy"><img src="assets/logos/social-summit-white.png" alt="Gradient + white Inman stamp, for dark"></div><figcaption><span>Gradient + white Inman stamp, for dark</span><a href="assets/logos/social-summit-white.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi light"><img src="assets/logos/social-summit-navy-inman.png" alt="Navy + powered by Inman, for light"></div><figcaption><span>Navy + powered by Inman, for light</span><a href="assets/logos/social-summit-navy-inman.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi light"><img src="assets/logos/social-summit-navy-pink-inman.png" alt="Navy/pink + powered by Inman, for light"></div><figcaption><span>Navy/pink + powered by Inman, for light</span><a href="assets/logos/social-summit-navy-pink-inman.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi light"><img src="assets/logos/social-summit-navy.png" alt="Navy wordmark, white Inman stamp"></div><figcaption><span>Navy wordmark, white stamp (stamp hidden on light; prefer Navy + Inman)</span><a href="assets/logos/social-summit-navy.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi light"><img src="assets/logos/powered-by-inman.png" alt="Endorsement stamp"></div><figcaption><span>Endorsement stamp</span><a href="assets/logos/powered-by-inman.png" download>PNG</a></figcaption></figure><figure class="lg"><div class="lgi light"><img src="assets/logos/verified-badge.png" alt="Verified seal"></div><figcaption><span>Verified seal</span><a href="assets/logos/verified-badge.png" download>PNG</a></figcaption></figure></div>
+<a class="btn" href="assets/downloads/Social_Summit_Logos.zip" download>Download logos</a>
+</section>
+
+<section id="favicon">
+<h2>Favicon</h2>
+<div class="fav">
+<figure><img src="assets/logos/social-summit-instagram-pfp.png" width="180" height="180" alt="Social Summit favicon 180px"><figcaption>180×180</figcaption></figure>
+<figure><div style="display:flex;align-items:flex-end;gap:16px"><img src="assets/logos/social-summit-instagram-pfp.png" width="48" height="48" alt=""><img src="assets/logos/social-summit-instagram-pfp.png" width="32" height="32" alt=""><img src="assets/logos/social-summit-instagram-pfp.png" width="16" height="16" alt=""></div><figcaption>48 · 32 · 16px</figcaption></figure>
+<figure><div class="tab"><img src="assets/logos/social-summit-instagram-pfp.png" alt="">Social Summit — New York</div><figcaption>Browser tab</figcaption></figure>
+</div>
+<a class="btn" href="assets/downloads/Social_Summit_Favicon.zip" download>Download favicon</a>
+</section>
+
+<section id="colors">
+<h2>Colors</h2>
+<div class="sws"><div class="sw"><div class="chip" style="background:#ED26F2"></div><div class="swb"><div class="swn">Fuchsia</div><p>Hex: #ed26f2<br>RGB: 237, 38, 242<br>CMYK: 2, 84, 0, 5<br>HSB: 298.53, 84.3, 94.9</p></div></div><div class="sw"><div class="chip" style="background:#E567DB"></div><div class="swb"><div class="swn">Pink</div><p>Hex: #e567db<br>RGB: 229, 103, 219<br>CMYK: 0, 55, 4, 10<br>HSB: 304.76, 55.02, 89.8</p></div></div><div class="sw"><div class="chip" style="background:#EDA9E4"></div><div class="swb"><div class="swn">Soft Pink</div><p>Hex: #eda9e4<br>RGB: 237, 169, 228<br>CMYK: 0, 29, 4, 7<br>HSB: 307.94, 28.69, 92.94</p></div></div><div class="sw"><div class="chip" style="background:#3E8FFA"></div><div class="swb"><div class="swn">Azure</div><p>Hex: #3e8ffa<br>RGB: 62, 143, 250<br>CMYK: 75, 43, 0, 2<br>HSB: 214.15, 75.2, 98.04</p></div></div><div class="sw"><div class="chip" style="background:#0B84FF"></div><div class="swb"><div class="swn">Inman Blue</div><p>Hex: #0b84ff<br>RGB: 11, 132, 255<br>CMYK: 96, 48, 0, 0<br>HSB: 210.25, 95.69, 100</p></div></div><div class="sw"><div class="chip dk" style="background:#161A48"></div><div class="swb"><div class="swn">Navy</div><p>Hex: #161a48<br>RGB: 22, 26, 72<br>CMYK: 69, 64, 0, 72<br>HSB: 235.2, 69.44, 28.24</p></div></div><div class="sw"><div class="chip dk" style="background:#0E1234"></div><div class="swb"><div class="swn">Deep Navy</div><p>Hex: #0e1234<br>RGB: 14, 18, 52<br>CMYK: 73, 65, 0, 80<br>HSB: 233.68, 73.08, 20.39</p></div></div></div>
+<h3>Signature gradient</h3>
+<div class="grad"></div>
+<div class="gradcap">Fuchsia #ed26f2 → #e85be4 → #efa9e6 → #f7d9f3 at 96°. Reserved for the "SOCIAL" wordmark and one hero moment per asset. Use one bold accent per campaign; navy carries the authority.</div>
+</section>
+
+<section id="typography">
+<h2>Typography</h2>
+<div class="spec"><div class="lbl">Display — Horizon</div><div class="d-horizon">Find your<br>people.</div></div>
+<h3>Weights</h3>
+<div class="wts"><div class="wt"><b style="font-family:Horizon;font-weight:800">Aa</b><span>800</span></div><div class="wt"><b style="font-family:Horizon;font-weight:900">Aa</b><span>900</span></div></div>
+<h3>Body — Hanken Grotesk</h3>
+<div class="spec"><p class="body-s">Social Summit brings real estate professionals together around useful ideas, personal growth and the people sitting next to them. Expect sharp speakers, practical workshops and plenty of time to meet each other.</p><p class="body-s" style="margin-top:14px"><b>Bold for emphasis.</b> Sentence case, leading 1.6.</p></div>
+<div class="wts"><div class="wt"><b style="font-weight:400">Aa</b><span>Regular</span></div><div class="wt"><b style="font-weight:500">Aa</b><span>Medium</span></div><div class="wt"><b style="font-weight:600">Aa</b><span>SemiBold</span></div><div class="wt"><b style="font-weight:700">Aa</b><span>Bold</span></div><div class="wt"><b style="font-weight:800">Aa</b><span>ExtraBold</span></div></div>
+<h3>Usage</h3>
+<ul class="use">
+<li class="ok"><i>✓</i><span>Set Horizon in uppercase with tight tracking (−0.02em) and leading around 0.9 for headlines, city names and single hero words.</span></li>
+<li class="ok"><i>✓</i><span>Use Hanken Grotesk for body, UI, labels and supporting copy.</span></li>
+<li class="no"><i>✗</i><span>Don't set Horizon in lowercase, for body copy, or for anything longer than a short headline.</span></li>
+</ul>
+<a class="btn" href="assets/downloads/Horizon.zip" download>Download Horizon</a>
+</section>
+
+<section id="script">
+<h2>Script typeface</h2>
+<div class="spec"><div class="lbl">Accent — Mistrully</div><div class="d-script">summit</div></div>
+<h3>Usage</h3>
+<ul class="use">
+<li class="ok"><i>✓</i><span>Use Mistrully for one or two words, usually in azure #3e8ffa, set under or beside a Horizon display word.</span></li>
+<li class="no"><i>✗</i><span>Don't use Mistrully for body copy, full sentences, buttons or UI.</span></li>
+</ul>
+<a class="btn" href="assets/downloads/Mistrully.zip" download>Download Mistrully</a>
+</section>
+
+<section id="editorial">
+<h2>Editorial typeface</h2>
+<div class="spec"><div class="lbl">Serif — Newsreader</div><div class="d-serif">Real estate feels different here.</div></div>
+<h3>Usage</h3>
+<ul class="use">
+<li class="ok"><i>✓</i><span>Use Newsreader for pull quotes, testimonials, sponsor decks and Inman-facing editorial.</span></li>
+<li class="no"><i>✗</i><span>Don't use Newsreader for headlines on event marketing; Horizon leads there.</span></li>
+</ul>
+<a class="btn" href="https://fonts.google.com/specimen/Newsreader">Get Newsreader</a>
+</section>
+
+<section id="developer">
+<h2>Developer guide</h2>
+<div class="dev">
+<h4>Social Summit</h4>
+<div class="sub">Color palette</div>
+<div class="dcs"><div class="dc"><div class="dchip" style="background:#ED26F2"></div><div><b>Fuchsia</b><span>Primary</span><code>#ed26f2</code></div></div><div class="dc"><div class="dchip" style="background:#E567DB"></div><div><b>Pink</b><span>Gradient mid</span><code>#e567db</code></div></div><div class="dc"><div class="dchip" style="background:#EDA9E4"></div><div><b>Soft Pink</b><span>Gradient tail</span><code>#eda9e4</code></div></div><div class="dc"><div class="dchip" style="background:#3E8FFA"></div><div><b>Azure</b><span>Script accent</span><code>#3e8ffa</code></div></div><div class="dc"><div class="dchip" style="background:#0B84FF"></div><div><b>Inman Blue</b><span>Endorsement</span><code>#0b84ff</code></div></div><div class="dc"><div class="dchip" style="background:#161A48"></div><div><b>Navy</b><span>Foundation</span><code>#161a48</code></div></div></div>
+<div class="sub">Font</div>
+<div class="dfs">
+<div class="df"><b style="font-family:Horizon;font-weight:900">Aa</b>Horizon<span>Display</span></div>
+<div class="df"><b style="font-family:Mistrully">Aa</b>Mistrully<span>Script accent</span></div>
+<div class="df"><b style="font-family:'Hanken Grotesk'">Aa</b>Hanken Grotesk<span>Body / UI</span></div>
+<div class="df"><b style="font-family:Newsreader">Aa</b>Newsreader<span>Editorial</span></div>
+</div>
+<a class="btn" href="Social_Summit_Design.md" download>Download design.md</a>
+</div>
+</section>
+</main>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('tg'),k='ss-brand-theme';
+function set(t){r.setAttribute('data-theme',t);b.textContent=t==='dark'?'Light':'Dark';}
+try{var s=localStorage.getItem(k);if(s)set(s);}catch(e){}
+b.addEventListener('click',function(){var t=r.getAttribute('data-theme')==='dark'?'light':'dark';set(t);try{localStorage.setItem(k,t);}catch(e){}});
+var links=[].slice.call(document.querySelectorAll('nav a[href^="#"]'));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('main section').forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>
